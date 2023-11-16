@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+rm igmetall.zip
+cd ../../
+zip -r igmetall/build/igmetall.zip igmetall -x "igmetall/.git/*" "igmetall/.gitignore" "igmetall/build/*"
+
