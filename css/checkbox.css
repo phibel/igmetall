@@ -1,0 +1,64 @@
+.igmetallCheckboxes {
+    align-items: center;
+    margin-left: 0.3em;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+
+.igmetallCheckboxes div {
+    float: left;
+    margin-left: 0.5em;
+}
+
+.hiddendiv {
+    margin-bottom: 1.5em;
+}
+
+input[type=checkbox] + label {
+    display: inline;
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox] + label:before {
+    content: "\2714";
+    font-size: 2em;
+    text-align: center;
+    border: 0.1em solid #000;
+    border-radius: 8px;
+    display: inline-block;
+    width: 1.6em;
+    height: 1.6em;
+    vertical-align: top;
+    color: transparent;
+    transition: .2s;
+    background-color: #ffffff;
+}
+
+input[type=checkbox] + label:active:before {
+    transform: scale(0);
+}
+
+input[type=checkbox]:checked + label:before {
+    background-color: #ffffff;
+    border: 0.1em solid #000000;
+    color: #000000;
+}
+
+input[type=checkbox]:disabled + label:before {
+    transform: scale(1);
+    border: 0.1em solid #000000;
+    color: #00ba37;
+}
+
+input[type=checkbox]:checked:disabled + label:before {
+    transform: scale(1);
+    background-color: #ffffff;
+    border: 0.1em solid #000000;
+    cursor: not-allowed;
+}

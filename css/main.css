@@ -1,0 +1,96 @@
+.igmetallInput {
+    border: 1px solid #333333;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    max-width: 100%;
+    color: #ffffff;
+    background-color: #000000; !important;
+    width: 100%;
+    padding: 10px; !important;
+    height: 3em; !important;
+}
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.number-input {
+    border: solid #000000;
+    display: inline-flex;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    width: 95%;
+    max-width: 200px;
+}
+
+.number-input,
+.number-input * {
+    box-sizing: border-box;
+    background-color: #000000;
+}
+
+.number-input button {
+    outline:none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    width: 3em;
+    height: 3em;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+}
+
+.number-input button:before,
+.number-input button:after {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    width: 1rem;
+    height: 2px;
+    background-color: #ffffff;
+    transform: translate(-50%, -50%);
+}
+.number-input button.plus:after {
+    transform: translate(-50%, -50%) rotate(90deg);
+    background-color: #ffffff;
+}
+.number-input button:hover {
+    border-color: #333333;
+    background-color: #333333;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+.number-input button:focus {
+    border-color: #333333;
+    background-color: #333333;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.number-input input[type=number] {
+    font-family: sans-serif;
+    max-width: 100%;
+    padding: 9px;
+    border: solid #000000;
+    background-color: #000000;
+    border-width: 0 2px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.hiddendiv {
+    display: none;
+    margin-left: 1em;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,120 @@
+<div style="font-weight: bold; background-color: #000000; color: #ffffff; border-radius: 8px; padding: 10px;"
+     onclick="showHideLegend('showHideAll')" id="showHideAll">Alle Erklärtexte anzeigen</div><br>
+<div class="box">
+    <div class="boxSmall">
+        <label onclick="showHideLegend(this.id)" id="monthOfEmploymentTitle">Betriebszugehörigkeit</label>
+        <div class="hiddendiv" id="monthOfEmploymentDesc">
+            Die Länge der Betriebszugehörigkeit wirkt sich auf die Sonderzahlungen aus.
+            Wer länger im Unternehmen ist, bekommt mehr Weihnachtsgeld.
+        </div>
+        <select name="monthOfEmployment" class="igmetallInput" id="monthOfEmployment">
+            <option value="5">weniger als 6 Monate</option>
+            <option value="11">weniger als 12 Monate</option>
+            <option value="23" selected="selected">weniger als 24 Monate</option>
+            <option value="35">weniger als 36 Monate</option>
+            <option value="36">mindestens 36 Monate</option>
+        </select>
+    </div>
+    <div class="boxSmall">
+        <label onclick="showHideLegend(this.id)" id="duagonGradeTitle">duagon Grade</label>
+        <div class="hiddendiv" id="duagonGradeDesc">
+            So bist Du aktuell bei duagon eingruppiert. Dein duagon Grade steht in Deinem duagon Arbeitsvertrag.
+        </div>
+        <select name="duagonGrades" id="duagonGrades" class="igmetallInput">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+    </div>
+    <div class="boxSmall">
+        <label onclick="showHideLegend(this.id)" id="weekHoursTitle">Wochenstunden</label>
+        <div class="hiddendiv" id="weekHoursDesc">
+            Die Arbeitszeit in der Metall- und Elektroindustrie beträgt 35 Stunden. Sie kann im begrenzten Umfang
+            freiwillig auf bis zu 40 Stunden (duagon Standard) angehoben werden. Das Entgelt erhöht sich entsprechend.
+        </div>
+        <div class="number-input">
+            <button onclick="workHours(false)" id="buttonMinus"></button>
+            <input class="quantity" min="8" max="40" name="quantity" value="40" type="number" id="weekHours">
+            <button onclick="workHours(true)" class="plus" id="buttonPlus"></button>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<label onclick="showHideLegend(this.id)" id="specialPaymentTitle">Leistungsentgelt 14%</label>
+<div class="hiddendiv" id="specialPaymentDesc"></div>
+<input type="range" min="0" max="28" value="14" class="slider" id="specialPaymentPercentage">
+
+<br>
+
+<div id="fatCatAlarm" style="display: none; border: 2px dotted #000000; color: #ffffff; padding: 10px;
+	    border-radius: 8px; margin-bottom: 25px;">
+    Du hast als duagon Grade 11 oder höher angegeben. Das bedeutet sehr wahrscheinlich,
+    das Du außertariflich beschäftigt wirst. Nach IG Metall Tarif wären das dann mindestens 113.351€ jährlich.<br><br>
+    <strong>Auch wenn Du schon sehr gut verdienst, lohnt es sich auch für Dich bei der IG Metall mitzumachen.
+        Denn durch einen Tarifvertrag gibt es regelmäßige Lohnerhöhung statt Nullrunden.</strong>
+</div>
+
+<span style="font-size: 2.4em; font-weight: bold;" onclick="showHideLegend(this.id)" id="monthlyMoneyTitle"></span><br>
+<div class="hiddendiv" id="monthlyMoneyDesc"></div>
+
+<span style="font-size: 2.4em; font-weight: bold;" onclick="showHideLegend(this.id)" id="yearlyMoneyTitle"></span><br>
+<div class="hiddendiv" id="yearlyMoneyDesc"></div>
+
+<br>
+
+<form action="https://www.igmetall.de/mitglieder/mitglied-werden#step-1">
+    <button class="joinIgMetall" formtarget="_blank" type="submit">
+        Dir gefällt, was Du hier liest? Dann sei dabei!<br>
+        <div style="font-size: 1.5em; font-weight: bold; padding-top: 0.3em;">Jetzt IG Metall Mitglied werden!</div>
+    </button>
+</form>
+
+<br>
+
+<div class="igmetallCheckboxes">
+    <input type="checkbox" id="monthlyMoneyCheck" name="monthlyMoneyCheck" disabled checked onclick="return false;"/>
+    <label for="monthlyMoneyCheck"></label>
+    <div onclick="showHideLegend(this.id)" id="igmetallTarifTitle"></div><br>
+</div>
+<div class="hiddendiv" id="igmetallTarifDesc"></div>
+<div class="igmetallCheckboxes">
+    <input type="checkbox" id="monthlyPerformanceCheck" name="monthlyPerformanceCheck" checked />
+    <label for="monthlyPerformanceCheck"></label>
+    <div onclick="showHideLegend(this.id)" id="monthlyPerformanceTitle"></div><br>
+</div>
+<div class="hiddendiv" id="monthlyPerformanceDesc"></div>
+<div class="igmetallCheckboxes">
+    <input type="checkbox" id="transformationMoneyCheck" name="transformationMoneyCheck" checked />
+    <label for="transformationMoneyCheck"></label>
+    <div onclick="showHideLegend(this.id)" id="transformationMoneyTitle"></div><br>
+</div>
+<div class="hiddendiv" id="transformationMoneyDesc"></div>
+<div class="igmetallCheckboxes">
+    <input type="checkbox" id="tzugaCheck" name="tzugaCheck" checked />
+    <label for="tzugaCheck"></label>
+    <div onclick="showHideLegend(this.id)" id="tzugaTitle"></div><br>
+</div>
+<div class="hiddendiv" id="tzugaDesc"></div>
+<div class="igmetallCheckboxes">
+    <input type="checkbox" id="vacationMoneyCheck" name="vacationMoneyCheck" checked />
+    <label for="vacationMoneyCheck"></label>
+    <div onclick="showHideLegend(this.id)" id="vacationMoneyTitle"></div><br>
+</div>
+<div class="hiddendiv" id="vacationMoneyDesc"></div>
+<div class="igmetallCheckboxes">
+    <input type="checkbox" id="chrismasMoneyCheck" name="chrismasMoneyCheck" checked />
+    <label for="chrismasMoneyCheck"></label>
+    <div onclick="showHideLegend(this.id)" id="chrismasMoneyTitle"></div><br>
+</div>
+<div class="hiddendiv" id="chrismasMoneyDesc"></div>

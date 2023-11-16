@@ -1,0 +1,32 @@
+.button {
+    color: #E3051B;
+    background-color: #ffffff;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.button:hover {
+    color: #000000;
+}
+
+.button:focus {
+    color: #E3051B;
+}
+
+.joinIgMetall {
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    color: #E3051B;
+}
+
+.joinIgMetall:hover {
+    border-radius: 8px;
+    background-color: #000000;
+    border: 2px solid #000000;
+    color: #ffffff;
+}
+
+.joinIgMetall:focus {
+    border-radius: 8px;
+}
