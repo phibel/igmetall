@@ -115,7 +115,7 @@ function calculateResult() {
     let yearlyMoney = (monthlyMoneyPlus * 12) + vacationMoney + transformationMoney + tzuga + chrismasMoney;
 
     document.getElementById('specialPaymentDesc').innerHTML = 'Zusätzlich zu deinem monatlichen Grundentgelt ' +
-        '(nach <a href="/" target="_blank">Entgelttabelle</a>: '+ numberToStr(monthlyMoney) +'€) ' +
+        '(nach <a href="/entgelttabelle-metall-elektro/" target="_blank">Entgelttabelle</a>: '+ numberToStr(monthlyMoney) +'€) ' +
         'ist der Arbeitgeber verpflichtet ein Leistungsentgelt zu zahlen. Der Tarifvertrag legt fest, ' +
         'dass das Leistungsentgelt durchschnittlich im Betrieb bei 14 Prozent des monatlichen Grundentgeltes ' +
         'liegen soll. Das Leistungentgelt kann individuell zwischen 0 und 28 Prozent ' +
