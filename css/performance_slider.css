@@ -21,7 +21,7 @@
 /***** Chrome, Safari, Opera and Edge Chromium styles *****/
 /* slider track */
 .performanceSlider::-webkit-slider-runnable-track {
-    background-color: #ffffff;
+    background-color: #000000;
     border-radius: 8px;
     height: 0.5rem;
 }
