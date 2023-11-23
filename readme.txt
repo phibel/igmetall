@@ -3,7 +3,7 @@ Contributors: phibel
 Tags: wordpress, ig metall, tarifrechner, entgeltrechner
 Requires at least: 6.4.1
 Tested up to: 6.4.1
-Stable tag: 1.0
+Stable tag: 1.1
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: www.gnu.org/licenses/gpl-2.0.html
