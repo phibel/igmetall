@@ -4,7 +4,7 @@
 Plugin Name: Duagon Igmetall
 Plugin URI: https://github.com/phibel/igmetall
 Description: Provides a shortcode [igmetallCalculator] to create a calculator to convert the salary from duagon Germany GmbH into currently valid "IG Metall Tarifvertrag".
-Version: 1.1
+Version: 1.2
 Author: phibel
 Author URI: https://github.com/phibel/
 License: GPLv2 or later

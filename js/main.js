@@ -1,6 +1,8 @@
 const igmetallTarif40hEg2toEg12 = {
-    'Stufe A': [0,0,2940,3088,3278,3678,3906,4212,4569,5004,5534,6120,6709],
-    'Stufe B': [0,0,2989,3182,3374,3769,4042,4384,4761,5250,5816,6421,6996],
+    /* Source: https://bayern.igmetall.de/aktuell/metall--und-elektroindustrie
+    * money / 35 * 40 => values in these lists */
+    'Stufe A': [0,2979,3038,3190,3387,3800,4035,4352,4720,5170,5718,6322,6931],
+    'Stufe B': [0,   0,3088,3288,3486,3894,4176,4529,4918,5424,6008,6633,7227],
 };
 
 document.getElementById('weekHours').addEventListener('input', calculateResult);
